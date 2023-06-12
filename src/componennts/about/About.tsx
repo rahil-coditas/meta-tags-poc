@@ -1,7 +1,6 @@
-import { useContext, useEffect } from "react";
-import { SeoContext } from "../home/Home";
-import { AboutPageMetaTags } from "../meta-tags/MetaTags";
+import { useContext } from "react";
 import { Helmet } from "react-helmet";
+import { SeoContext } from "../home/Home";
 const AboutPage = () => {
 	const { setSeo } = useContext(SeoContext);
 	// useEffect(() => {

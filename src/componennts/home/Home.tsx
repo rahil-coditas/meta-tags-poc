@@ -1,12 +1,11 @@
-import React, { createContext, useState } from "react";
-import { createPortal } from "react-dom";
+import { createContext, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { AboutPageMetaTags } from "../meta-tags/MetaTags";
 import styles from "./Home.module.css";
 export const SeoContext = createContext({} as any);
 const MainOutlet = () => {
-	const [seoContent, setSeoContent] = useState(<AboutPageMetaTags />);
-	const doc = document.head;
+	const [_, setSeoContent] = useState(<AboutPageMetaTags />);
+	// const doc = document.head;
 	return (
 		<SeoContext.Provider
 			value={{ setSeo: (data: any) => setSeoContent(data) }}>
