@@ -1,8 +1,8 @@
-import { useContext } from "react";
+// import { useContext } from "react";
 import { Helmet } from "react-helmet";
-import { SeoContext } from "../home/Home";
+// import { SeoContext } from "../home/Home";
 const AboutPage = () => {
-	const { setSeo } = useContext(SeoContext);
+	// const { setSeo } = useContext(SeoContext);
 	// useEffect(() => {
 	// 	setSeo();
 	// }, []);
